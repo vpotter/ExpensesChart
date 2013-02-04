@@ -1,0 +1,30 @@
+medicine: ['PASM', 'AVITSENNA', 'APTEKA', 'LE BL', 'SOZVEZDIE KRA',
+            'DOKTOR LOR', 'GUBERNSKIY', 'PHARMA', 'MO KRASNYI PR',
+            'MELODIYA ZDORz']
+supermarket: ['MEGAS', 'BAHETLE', 'UNIVERSAM', 'POLYANA', 'OKEY', "O'KEY",
+             'PRODUKTY', 'SUPERMARKET', 'KHOLIDEY', 'LENTA', 'AUCHAN',
+             'PEREKRESTOK', 'KUPTSOV ELISE', 'MARIYA-RA', 'HOLIDAY',
+             'GOROZHANKA', 'PRODUKTI NSK', 'TORGOVYI TSEN', 'GIPERMARKET']
+wear_and_stuff: ['IKEA', 'LEROY', 'SPORTMASTER', 'TECHNOCITY', 'ECCO',
+             'UYUTERRA', 'RIV GOSH', 'INTERSPORT', 'UYUTER', 'ZARA', 'H & M',
+             'EXPEDITION', 'STOCKMANN', 'GALEREYA TERR', 'LTB-LIGOVSKIY',
+             'OVS  SHOP', 'COOKHOUSE', 'WOMEN SECRET', 'ASKANIA',
+             'KOMILFO', 'LADY COLLECTI', 'LEONARDO']
+restourants: ['KOFEMOLKA', 'PATIO', 'PEOPLES', 'PIZZA', 'TEREMOK', 'SCHASTIE',
+             'RUSSIAN VODKA', 'SUBWAY', 'MCDONALDS', 'BELGIYSKIE',
+             'CHAS PIK  CAF', 'TITSIAN', 'BLINOFF', 'TREVELERS', 'SABWAY',
+             "TRAVELER'S", 'KRIKPARK', 'PERCHINI']
+kids_stuff: ['DETI', 'IGROMIR', 'DETSKIY', 'MOTHERCARE', 'AZIZ BEBE',
+             'CROCKID', 'MELOMAN', 'PAPAYYA']
+spent_online: ['ITUNES', 'Amazon', 'PAYPAL']
+sent_to_rub: ['Внутрибанковский']
+traveling: ['IBE S7', 'AEROFLOT', 'WWW.RZD.RU', 'NOVOSIBIRSK\S7']
+communal: ['Оплата коммунальных услуг', 'Сибирские сети']
+alfabank: ['Комиссия за услугу', 'Комиссия за переводы в рублях',
+            'Комиссия за пакет услуг', 'Комис.за запрос через банкомат',
+            'Комиссия за обслуживание карты']
+bankomat: ['Alfa-Bank ATM']
+mobile_phone: ['Мегафон']
+yandex_money: ['Яндекс.Деньги']
+kinoteatr: ['KINO',]
+gasoline: ['GAZPROMNEFT', 'AZS', 'AZK']

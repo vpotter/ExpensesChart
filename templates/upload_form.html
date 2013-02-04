@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <title>Expenses Chart</title>
+</head>
+<body>
+
+<h2>Upload your csv file</h2>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="csv_file">
+    <input type="submit">
+</form>
+
+{% if pie_data %}
+<h2>Expenses Chart</h2>
+<div class="expenses-chart">
+    <script>
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable({{ pie_data.0|safe}});
+
+        var options = {
+        title: 'Expenses for {{ pie_data.1 }} - {{ pie_data.2 }} period'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+</div>
+{% endif %}
+
+</body>
+</html>
