@@ -1,24 +1,29 @@
 medicine: ['PASM', 'AVITSENNA', 'APTEKA', 'LE BL', 'SOZVEZDIE KRA',
             'DOKTOR LOR', 'GUBERNSKIY', 'PHARMA', 'MO KRASNYI PR',
-            'MELODIYA ZDORz']
+            'MELODIYA ZDOR', 'POS OOO ROZTO', 'MIR ZDOROVYA']
 supermarket: ['MEGAS', 'BAHETLE', 'UNIVERSAM', 'POLYANA', 'OKEY', "O'KEY",
-             'PRODUKTY', 'SUPERMARKET', 'KHOLIDEY', 'LENTA', 'AUCHAN',
+             "O'K", 'PRODUKTY', 'SUPERMARKET', 'KHOLIDEY', 'LENTA', 'AUCHAN',
              'PEREKRESTOK', 'KUPTSOV ELISE', 'MARIYA-RA', 'HOLIDAY',
              'GOROZHANKA', 'PRODUKTI NSK', 'TORGOVYI TSEN', 'GIPERMARKET']
 wear_and_stuff: ['IKEA', 'LEROY', 'SPORTMASTER', 'TECHNOCITY', 'ECCO',
              'UYUTERRA', 'RIV GOSH', 'INTERSPORT', 'UYUTER', 'ZARA', 'H & M',
              'EXPEDITION', 'STOCKMANN', 'GALEREYA TERR', 'LTB-LIGOVSKIY',
              'OVS  SHOP', 'COOKHOUSE', 'WOMEN SECRET', 'ASKANIA',
-             'KOMILFO', 'LADY COLLECTI', 'LEONARDO']
+             'KOMILFO', 'LADY COLLECTI', 'LEONARDO', 'BAON', 'SELA',
+             "MACY'S", 'STILPARK', 'LUSH', 'TERRANOVA', 'GOOGLEONSITES',
+             'TECHNO CITY', 'BUHGALTER']
 restourants: ['KOFEMOLKA', 'PATIO', 'PEOPLES', 'PIZZA', 'TEREMOK', 'SCHASTIE',
              'RUSSIAN VODKA', 'SUBWAY', 'MCDONALDS', 'BELGIYSKIE',
              'CHAS PIK  CAF', 'TITSIAN', 'BLINOFF', 'TREVELERS', 'SABWAY',
-             "TRAVELER'S", 'KRIKPARK', 'PERCHINI']
+             "TRAVELER'S", 'KRIKPARK', 'PERCHINI', 'BLINNITSA',
+             'CHASHKA KOFE', 'COFFEE HOUSE', 'DUDNIK', 'GUDMANSIB',
+             'SHAFRAN_URITS']
 kids_stuff: ['DETI', 'IGROMIR', 'DETSKIY', 'MOTHERCARE', 'AZIZ BEBE',
-             'CROCKID', 'MELOMAN', 'PAPAYYA']
-spent_online: ['ITUNES', 'Amazon', 'PAYPAL']
-sent_to_rub: ['Внутрибанковский']
-traveling: ['IBE S7', 'AEROFLOT', 'WWW.RZD.RU', 'NOVOSIBIRSK\S7']
+             'CROCKID', 'MELOMAN', 'PAPAYYA', 'NATI']
+spent_online: ['ITUNES', 'Amazon', 'PAYPAL', 'AMZN.COM']
+sent_to_rub: ['Внутрибанковский перевод между счетами']
+traveling: ['IBE S7', 'AEROFLOT', 'WWW.RZD.RU', 'NOVOSIBIRSK\S7',
+            'AEROEXPRESS', 'MAGAZIN AEROM']
 communal: ['Оплата коммунальных услуг', 'Сибирские сети']
 alfabank: ['Комиссия за услугу', 'Комиссия за переводы в рублях',
             'Комиссия за пакет услуг', 'Комис.за запрос через банкомат',
@@ -26,5 +31,6 @@ alfabank: ['Комиссия за услугу', 'Комиссия за пере
 bankomat: ['Alfa-Bank ATM']
 mobile_phone: ['Мегафон']
 yandex_money: ['Яндекс.Деньги']
-kinoteatr: ['KINO',]
-gasoline: ['GAZPROMNEFT', 'AZS', 'AZK']
+entertainment: ['KINO', 'PLANETARIY', 'LOTOS SPA', 'BIZNES BUKET', 'LYA ROUZ']
+car_expenses: ['GAZPROMNEFT', 'AZS', 'AZK', 'AVTOMOYKA', 'ROSNEF']
+skip: ['Внутрибанковский перевод на счёт цели']
