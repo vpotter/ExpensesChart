@@ -4,3 +4,4 @@ Flask-SQLAlchemy
 flask-login
 python-dateutil
 PyYAML
+http://sourceforge.net/projects/dbfpy/files/dbfpy/2.2.5/dbfpy-2.2.5.tar.gz/download

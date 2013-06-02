@@ -1,25 +1,30 @@
 medicine: ['PASM', 'AVITSENNA', 'APTEKA', 'LE BL', 'SOZVEZDIE KRA',
             'DOKTOR LOR', 'GUBERNSKIY', 'PHARMA', 'MO KRASNYI PR',
-            'MELODIYA ZDOR', 'POS OOO ROZTO', 'MIR ZDOROVYA']
-supermarket: ['MEGAS', 'BAHETLE', 'UNIVERSAM', 'POLYANA', 'OKEY', "O'KEY",
+            'MELODIYA ZDOR', 'POS OOO ROZTO', 'MIR ZDOROVYA', 'POS082740',
+            'DKB NOVOS', 'MEDTEHNIKA', 'CLINIC PROFES', 'BLESK']
+food: ['MEGAS', 'BAHETLE', 'UNIVERSAM', 'POLYANA', 'OKEY', "O'KEY",
              "O'K", 'PRODUKTY', 'SUPERMARKET', 'KHOLIDEY', 'LENTA', 'AUCHAN',
              'PEREKRESTOK', 'KUPTSOV ELISE', 'MARIYA-RA', 'HOLIDAY',
-             'GOROZHANKA', 'PRODUKTI NSK', 'TORGOVYI TSEN', 'GIPERMARKET']
-wear_and_stuff: ['IKEA', 'LEROY', 'SPORTMASTER', 'TECHNOCITY', 'ECCO',
+             'GOROZHANKA', 'PRODUKTI NSK', 'TORGOVYI TSEN', 'GIPERMARKET', 'METRO',
+             'RYBNYY DEN', 'ASTS-TORG']
+wear_and_stuff: ['IKEA', 'LEROY', 'SPORTMASTER', 'ECCO',
              'UYUTERRA', 'RIV GOSH', 'INTERSPORT', 'UYUTER', 'ZARA', 'H & M',
              'EXPEDITION', 'STOCKMANN', 'GALEREYA TERR', 'LTB-LIGOVSKIY',
              'OVS  SHOP', 'COOKHOUSE', 'WOMEN SECRET', 'ASKANIA',
              'KOMILFO', 'LADY COLLECTI', 'LEONARDO', 'BAON', 'SELA',
-             "MACY'S", 'STILPARK', 'LUSH', 'TERRANOVA', 'GOOGLEONSITES',
-             'TECHNO CITY', 'BUHGALTER']
+             "MACY'S", 'STILPARK', 'LUSH', 'TERRANOVA', 'BUHGALTER',
+             'NOVYY KNIZHNY', 'IKSTRIM', 'PERESTROYKA', 'M.A.C. SHOP', 'ALBA']
+electronics: ['APPLE STORE', 'E2E4 FABRICHN', 'RESTOR KRASNIY PR', 'ELDORADO',
+              'SVYAZNOY', 'TECHNO CITY', 'GOOGLEONSITES', 'TECHNOCITY']
 restourants: ['KOFEMOLKA', 'PATIO', 'PEOPLES', 'PIZZA', 'TEREMOK', 'SCHASTIE',
              'RUSSIAN VODKA', 'SUBWAY', 'MCDONALDS', 'BELGIYSKIE',
              'CHAS PIK  CAF', 'TITSIAN', 'BLINOFF', 'TREVELERS', 'SABWAY',
              "TRAVELER'S", 'KRIKPARK', 'PERCHINI', 'BLINNITSA',
              'CHASHKA KOFE', 'COFFEE HOUSE', 'DUDNIK', 'GUDMANSIB',
-             'SHAFRAN_URITS']
+             'SHAFRAN_URITS', 'RESTAURANT', 'SERVIS TSPT', 'DZHUS BAR']
 kids_stuff: ['DETI', 'IGROMIR', 'DETSKIY', 'MOTHERCARE', 'AZIZ BEBE',
-             'CROCKID', 'MELOMAN', 'PAPAYYA', 'NATI']
+             'SMIK', 'CROCKID', 'KOTOFEY', 'MELOMAN', 'PAPAYYA', 'NATI',
+             'BIGBADABU', 'BUBL GUM']
 spent_online: ['ITUNES', 'Amazon', 'PAYPAL', 'AMZN.COM']
 sent_to_rub: ['Внутрибанковский перевод между счетами']
 traveling: ['IBE S7', 'AEROFLOT', 'WWW.RZD.RU', 'NOVOSIBIRSK\S7',
@@ -28,9 +33,9 @@ communal: ['Оплата коммунальных услуг', 'Сибирски
 alfabank: ['Комиссия за услугу', 'Комиссия за переводы в рублях',
             'Комиссия за пакет услуг', 'Комис.за запрос через банкомат',
             'Комиссия за обслуживание карты']
-bankomat: ['Alfa-Bank ATM']
-mobile_phone: ['Мегафон']
+bankomat: ['Alfa-Bank ATM', 'Выдача наличных']
+mobile_phone: ['Мегафон', 'МегаФон']
 yandex_money: ['Яндекс.Деньги']
-entertainment: ['KINO', 'PLANETARIY', 'LOTOS SPA', 'BIZNES BUKET', 'LYA ROUZ']
-car_expenses: ['GAZPROMNEFT', 'AZS', 'AZK', 'AVTOMOYKA', 'ROSNEF']
-skip: ['Внутрибанковский перевод на счёт цели']
+entertainment: ['KINO', 'PLANETARIY', 'LOTOS SPA', 'BIZNES BUKET', 'LYA ROUZ', 'POS OOO SOLDI']
+car_expenses: ['GAZPROMNEFT', 'AZS', 'AZK', 'AVTOMOYKA', 'ROSNEF', 'IP KONOVETS', 'Оплата штрафа']
+skip: ['Внутрибанковский перевод на счёт цели', 'Пополнение', 'Вознаграждение', 'Проценты']

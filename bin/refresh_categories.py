@@ -17,8 +17,7 @@ _row = ['' for i in range(6)]
 payments = Payment.query.all()
 
 for payment in payments:
-    _row[5] = payment.description
-    new_cat = detect_category(_row, categories)
+    new_cat = detect_category(payment.description, categories)
     if new_cat == 'Skip':
         db.session.delete(payment)
     elif payment.category != new_cat:

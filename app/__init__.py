@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-from flask import Flask
+import flask
 from flask.ext.sqlalchemy import SQLAlchemy
 import json
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 app.config.from_pyfile('config.py')
 db = SQLAlchemy(app)
 
@@ -16,3 +16,8 @@ app.jinja_env.filters['to_json'] = to_json
 
 from charts.views import charts as charts_bp
 app.register_blueprint(charts_bp)
+
+
+@app.route('/')
+def index():
+    return flask.redirect(flask.url_for('charts.pie_chart'))

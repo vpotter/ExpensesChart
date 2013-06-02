@@ -7,7 +7,11 @@
 
 <h2>Upload your csv file</h2>
 <form method="post" enctype="multipart/form-data">
-    <input type="file" name="csv_file">
+    <input type="file" name="csv_file" />
+    <select name="bank" id="bank">
+        <option value="alfabank">Alfa-Bank</option>
+        <option value="tcsbank">TCS Bank</option>
+    </select>
     <input type="submit">
 </form>
 
