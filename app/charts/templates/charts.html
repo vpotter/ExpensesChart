@@ -1,0 +1,82 @@
+<html ng-app="expensesChart">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+    <script src="{{url_for('static', filename='js/controllers.js')}}"></script>
+    <script src="{{url_for('static', filename='js/directives.js')}}"></script>
+
+    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <title>Expenses Chart</title>
+</head>
+<body ng-cloak>
+
+<div id="main-expenses-chart" ng-controller="PieChartCtrl" ng-init='data_url="{{ url_for('charts.pie_chart_data') }}";getData();'>
+<h2>Upload your csv file</h2>
+<div ng-init='csv_action="{{ url_for('charts.expenses_upload_form') }}";'>
+    <input type="file" id="csv_file" name="csv_file" onchange="angular.element(this).scope().setCSV(this)" />
+    <select name="bank" id="bank" ng-model="bank" ng-init='bank="alfabank";'>
+        <option value="alfabank">Alfa-Bank</option>
+        <option value="tcsbank">TCS Bank</option>
+    </select>
+    <input type="button" value="Send" ng-click="submitCSV()">
+</div>
+
+<h2>Upload currency rates file</h2>
+{% raw %}
+<p>Last rate date: {{last_rate_date}}</p>
+{% endraw %}
+<div ng-init='dbf_action="{{ url_for('charts.rates_upload_form') }}";'>
+    <input type="file" id="dbf_file" name="dbf_file" onchange="angular.element(this).scope().setDBF(this)" />
+    <input type="button" value="Send" ng-click="submitDBF()">
+</form>
+
+<h2>Expenses Chart</h2>
+
+<input type="text" datepicker class="datepicker" name="date_from" ng-model="date_from">
+<input type="text" datepicker class="datepicker" name="date_to" ng-model="date_to">
+<input type="submit" value="Go" ng-click="getData()">
+
+<p class="date-links">
+<a href="" ng-click="fillDates(30)">30 days</a> <a href="" ng-click="fillDates(90)">90 days</a> <a href="" ng-click="fillDates(180)">180 days</a> <a href="" ng-click="fillDates(365);">1 year</a>
+</p>
+
+{% raw %}
+<p>Total: {{total|number:2}}</p>
+{% endraw %}
+<div class="expenses-chart">
+    <div id="pie_chart_div" style="width: 700px; height: 500px;"></div>
+</div>
+<div id="category_details" ng-controller="CategoryCtrl" ng-show="show_details" ng-init='category_url="{{ url_for('charts.get_category') }}"'>
+    <div id="column_chart_div" style="width: 500px; height: 200px;"></div>
+    {% raw %}
+    <table>
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in rows" ng-class="{'bold':row.bold}">
+                <td>{{row.date | date:'yyyy-MM-dd'}}</td>
+                <td>{{row.amount}}</td>
+                <td>{{row.description}}</td>
+            </tr>
+        </tbody>
+    </table>
+    {% endraw %}
+</div>
+
+
+<script>
+    google.load('visualization', '1', {packages: ['corechart']});
+    google.setOnLoadCallback(function(){angular.element($('#main-expenses-chart')).scope().google_loaded = true});
+</script>
+</div>
+
+</body>
+</html>

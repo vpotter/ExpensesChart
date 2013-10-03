@@ -20,4 +20,4 @@ app.register_blueprint(charts_bp)
 
 @app.route('/')
 def index():
-    return flask.redirect(flask.url_for('charts.pie_chart'))
+    return flask.redirect(flask.url_for('charts.chart'))

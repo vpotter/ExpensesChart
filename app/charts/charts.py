@@ -24,13 +24,13 @@ def expenses_pie_chart(date_from=None, date_to=None, currency=None):
     for payment in payments:
         per_category[payment.category] += payment.convert_to(currency)
 
-    result = [['Category', 'Spent amount']]
+    categories = []
     for category, amount in per_category.items():
-        result.append((category, round(amount, 2)))
+        categories.append((category, round(amount, 2)))
+
+    categories.sort(key=lambda x: x[1], reverse=True)
+    result = [['Category', 'Spent amount']]
+    result.extend(categories)
 
     return result, (date_from or min(dates), date_to or max(dates))
 
-
-def category_line_chart(category_raw_data):
-    """ Prepares category data for Google Line chart """
-    pass
